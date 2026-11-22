@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background-color: #070709;
+    color: #f3f4f6;
+    font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
+  }
+
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #070709;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #272732;
+    border-radius: 4px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #f59e0b;
+  }
+}
+
+@layer utilities {
+  .clip-esports {
+    clip-path: polygon(14px 0, 100% 0, 100% calc(100% - 14px), calc(100% - 14px) 100%, 0 100%, 0 14px);
+  }
+
+  .clip-btn {
+    clip-path: polygon(10px 0, 100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%, 0 10px);
+  }
+
+  .clip-banner {
+    clip-path: polygon(0 0, 100% 0, 97% 100%, 3% 100%);
+  }
+
+  .phoenix-glow {
+    filter: drop-shadow(0 0 28px rgba(255, 69, 0, 0.48)) drop-shadow(0 0 12px rgba(255, 215, 0, 0.45));
+  }
+
+  .card-glow:hover {
+    box-shadow: 0 12px 35px -8px rgba(255, 69, 0, 0.25), 0 0 0 1px rgba(255, 215, 0, 0.45);
+  }
+
+  .grid-bg {
+    background-image: linear-gradient(to right, rgba(255, 215, 0, 0.04) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(255, 69, 0, 0.04) 1px, transparent 1px);
+    background-size: 48px 48px;
+  }
+}
